@@ -1,0 +1,702 @@
+[
+  {
+    "id": 0,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.028810876528197,
+    "water_temperature": 15
+  },
+  {
+    "id": 1,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.139296352571048,
+    "water_temperature": 15
+  },
+  {
+    "id": 2,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.190816379835609,
+    "water_temperature": 15
+  },
+  {
+    "id": 3,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.919525462222158,
+    "water_temperature": 15
+  },
+  {
+    "id": 4,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.808332553868029,
+    "water_temperature": 15
+  },
+  {
+    "id": 5,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.085189503952719,
+    "water_temperature": 15
+  },
+  {
+    "id": 6,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.925381822229231,
+    "water_temperature": 15
+  },
+  {
+    "id": 7,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.9515962930087,
+    "water_temperature": 15
+  },
+  {
+    "id": 8,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.619447403935682,
+    "water_temperature": 15
+  },
+  {
+    "id": 9,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.077553932417382,
+    "water_temperature": 15
+  },
+  {
+    "id": 10,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.075336925025355,
+    "water_temperature": 15
+  },
+  {
+    "id": 11,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.0559103522922655,
+    "water_temperature": 15
+  },
+  {
+    "id": 12,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.044504268656771,
+    "water_temperature": 15
+  },
+  {
+    "id": 13,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.176873531281625,
+    "water_temperature": 15
+  },
+  {
+    "id": 14,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.205788057307633,
+    "water_temperature": 15
+  },
+  {
+    "id": 15,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.3917447002916274,
+    "water_temperature": 15
+  },
+  {
+    "id": 16,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.9308119987837635,
+    "water_temperature": 15
+  },
+  {
+    "id": 17,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.464171079373254,
+    "water_temperature": 15
+  },
+  {
+    "id": 18,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.762976920154113,
+    "water_temperature": 15
+  },
+  {
+    "id": 19,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.107414234756422,
+    "water_temperature": 15
+  },
+  {
+    "id": 20,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.695742370181704,
+    "water_temperature": 15
+  },
+  {
+    "id": 21,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.427520031902371,
+    "water_temperature": 15
+  },
+  {
+    "id": 22,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.838522614597729,
+    "water_temperature": 15
+  },
+  {
+    "id": 23,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.689387729946595,
+    "water_temperature": 15
+  },
+  {
+    "id": 24,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.676704025242495,
+    "water_temperature": 15
+  },
+  {
+    "id": 25,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -7.028385958721801,
+    "water_temperature": 15
+  },
+  {
+    "id": 26,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.582467433461231,
+    "water_temperature": 15
+  },
+  {
+    "id": 27,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.338039435253968,
+    "water_temperature": 15
+  },
+  {
+    "id": 28,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.257791061903117,
+    "water_temperature": 15
+  },
+  {
+    "id": 29,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.840750249540753,
+    "water_temperature": 15
+  },
+  {
+    "id": 30,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.586768772771939,
+    "water_temperature": 15
+  },
+  {
+    "id": 31,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.951667681074224,
+    "water_temperature": 15
+  },
+  {
+    "id": 32,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.643135760154155,
+    "water_temperature": 15
+  },
+  {
+    "id": 33,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.187994018797058,
+    "water_temperature": 15
+  },
+  {
+    "id": 34,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.22277732537472,
+    "water_temperature": 15
+  },
+  {
+    "id": 35,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.427890716255654,
+    "water_temperature": 15
+  },
+  {
+    "id": 36,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.593574674615718,
+    "water_temperature": 15
+  },
+  {
+    "id": 37,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.635071262641653,
+    "water_temperature": 15
+  },
+  {
+    "id": 38,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.149439373022103,
+    "water_temperature": 15
+  },
+  {
+    "id": 39,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.836682474801814,
+    "water_temperature": 15
+  },
+  {
+    "id": 40,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.863129906090242,
+    "water_temperature": 15
+  },
+  {
+    "id": 41,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.0587271994293905,
+    "water_temperature": 15
+  },
+  {
+    "id": 42,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.484482917120587,
+    "water_temperature": 15
+  },
+  {
+    "id": 43,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.959707323336934,
+    "water_temperature": 15
+  },
+  {
+    "id": 44,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.977698892718134,
+    "water_temperature": 15
+  },
+  {
+    "id": 45,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.8195116820693435,
+    "water_temperature": 15
+  },
+  {
+    "id": 46,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.3951333336101115,
+    "water_temperature": 15
+  },
+  {
+    "id": 47,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.108634016709498,
+    "water_temperature": 15
+  },
+  {
+    "id": 48,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.889139477890878,
+    "water_temperature": 15
+  },
+  {
+    "id": 49,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.563715877952112,
+    "water_temperature": 15
+  },
+  {
+    "id": 50,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.000337262623134,
+    "water_temperature": 15
+  },
+  {
+    "id": 51,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.825531041334693,
+    "water_temperature": 15
+  },
+  {
+    "id": 52,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.191891057640537,
+    "water_temperature": 15
+  },
+  {
+    "id": 53,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.26510918013248,
+    "water_temperature": 15
+  },
+  {
+    "id": 54,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.408090899237922,
+    "water_temperature": 15
+  },
+  {
+    "id": 55,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.397757306251598,
+    "water_temperature": 15
+  },
+  {
+    "id": 56,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.982977198175098,
+    "water_temperature": 15
+  },
+  {
+    "id": 57,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.389111254417293,
+    "water_temperature": 15
+  },
+  {
+    "id": 58,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.841249199398131,
+    "water_temperature": 15
+  },
+  {
+    "id": 59,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.527455475642512,
+    "water_temperature": 15
+  },
+  {
+    "id": 60,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.75019800913301,
+    "water_temperature": 15
+  },
+  {
+    "id": 61,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.2885139453504335,
+    "water_temperature": 15
+  },
+  {
+    "id": 62,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.290824404967348,
+    "water_temperature": 15
+  },
+  {
+    "id": 63,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.754788729321794,
+    "water_temperature": 15
+  },
+  {
+    "id": 64,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.337051348819707,
+    "water_temperature": 15
+  },
+  {
+    "id": 65,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.1163426781637735,
+    "water_temperature": 15
+  },
+  {
+    "id": 66,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.429190229124224,
+    "water_temperature": 15
+  },
+  {
+    "id": 67,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.945207526550821,
+    "water_temperature": 15
+  },
+  {
+    "id": 68,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.65087474169771,
+    "water_temperature": 15
+  },
+  {
+    "id": 69,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.021485262890305,
+    "water_temperature": 15
+  },
+  {
+    "id": 70,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.60273183407953,
+    "water_temperature": 15
+  },
+  {
+    "id": 71,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.660333617993489,
+    "water_temperature": 15
+  },
+  {
+    "id": 72,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.559866823449038,
+    "water_temperature": 15
+  },
+  {
+    "id": 73,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.859780496086138,
+    "water_temperature": 15
+  },
+  {
+    "id": 74,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.230180713494955,
+    "water_temperature": 15
+  },
+  {
+    "id": 75,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.103536715940306,
+    "water_temperature": 15
+  },
+  {
+    "id": 76,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.5269395749978685,
+    "water_temperature": 15
+  },
+  {
+    "id": 77,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.13787509028933,
+    "water_temperature": 15
+  },
+  {
+    "id": 78,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.987089188069321,
+    "water_temperature": 15
+  },
+  {
+    "id": 79,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.712447278000598,
+    "water_temperature": 15
+  },
+  {
+    "id": 80,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.072265100674334,
+    "water_temperature": 15
+  },
+  {
+    "id": 81,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.835912447513486,
+    "water_temperature": 15
+  },
+  {
+    "id": 82,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.122621215016804,
+    "water_temperature": 15
+  },
+  {
+    "id": 83,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -4.946258091763604,
+    "water_temperature": 15
+  },
+  {
+    "id": 84,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.330399683499314,
+    "water_temperature": 15
+  },
+  {
+    "id": 85,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.622822575300038,
+    "water_temperature": 15
+  },
+  {
+    "id": 86,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -6.059620861461614,
+    "water_temperature": 15
+  },
+  {
+    "id": 87,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.931330529248458,
+    "water_temperature": 15
+  },
+  {
+    "id": 88,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.923216003354005,
+    "water_temperature": 15
+  },
+  {
+    "id": 89,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.548501631082236,
+    "water_temperature": 15
+  },
+  {
+    "id": 90,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.737757751633204,
+    "water_temperature": 15
+  },
+  {
+    "id": 91,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.4914839074447315,
+    "water_temperature": 15
+  },
+  {
+    "id": 92,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.44826713438248,
+    "water_temperature": 15
+  },
+  {
+    "id": 93,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.572265574266201,
+    "water_temperature": 15
+  },
+  {
+    "id": 94,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.402360516349962,
+    "water_temperature": 15
+  },
+  {
+    "id": 95,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.039096147272577,
+    "water_temperature": 15
+  },
+  {
+    "id": 96,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.045629785155833,
+    "water_temperature": 15
+  },
+  {
+    "id": 97,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.08812289829732,
+    "water_temperature": 15
+  },
+  {
+    "id": 98,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.393766814112824,
+    "water_temperature": 15
+  },
+  {
+    "id": 99,
+    "depth": 1500,
+    "max_tension": 500000,
+    "max_current": -5.802370602620537,
+    "water_temperature": 15
+  }
+]
