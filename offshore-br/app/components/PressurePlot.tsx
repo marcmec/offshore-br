@@ -13,7 +13,7 @@ const PressurePlot = () => {
     },
     axis: {
       label: {
-        formatter(v:Number) {
+        formatter(v:any) {
           return Number(v) * 100;
         },
       },
