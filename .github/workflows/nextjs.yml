@@ -1,0 +1,33 @@
+name: Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: |
+        cd offshore-br/  # Substitua 'main-folder' pelo nome da sua subpasta
+        yarn install
+
+    - name: Build
+      run: |
+        cd offshore-br/  # Substitua 'main-folder' pelo nome da sua subpasta
+        yarn build
+
+    - name: Deploy to Hosting Service
+      run: |
+        cd offshore-br/ 
