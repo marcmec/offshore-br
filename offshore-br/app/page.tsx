@@ -13,9 +13,12 @@ import { Area } from '@ant-design/plots';
 import AreaPlot from './components/AreaTensionDepth';
 import BarPlot from './components/BarPlot';
 import LinePlot from './components/LinePlot';
-import Areaplt from './components/AreaTensionInteration';
 import AreaTensionInteration from './components/AreaTensionInteration';
 import AreaTensionDepth from './components/AreaTensionDepth';
+import DemoLiquid from './components/LiquidPlot';
+import DemoTinyArea from './components/TinyPlotArea';
+import PressurePlot from './components/PressurePlot';
+import TemperatureRingPlot from './components/TemperaturePlot';
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -55,19 +58,41 @@ const Home = () => {
   } = theme.useToken();
 
   return (
-    <Layout style={{ minHeight: '100vh',backgroundColor:'#333333'}}>
-      <Sider  collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+    <Layout style={{ minHeight: '100vh', backgroundColor: '#333333' }}>
+      <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark"  mode="inline" items={items} />
+        <Menu theme="dark" mode="inline" items={items} />
       </Sider>
-      <Layout style={{ backgroundColor:'#333333',color:"#ffffff"}}>
+      <Layout style={{ backgroundColor: '#333333', color: "#ffffff" }}>
         <Header style={{ padding: 0, background: "#333333" }} />
-        <Content style={{ margin: '0 16px',}}>
-          <Breadcrumb style={{ margin: '16px 0',color:"#ffffff" }}>
+        <Content style={{ margin: '0 16px', }}>
+          <Breadcrumb style={{ margin: '16px 0', color: "#ffffff" }}>
             <Breadcrumb.Item>DashBoard</Breadcrumb.Item>
             <Breadcrumb.Item>OffShore</Breadcrumb.Item>
           </Breadcrumb>
+          <Row style={{justifyContent:"center",alignItems:"center",padding:"8px",flex:1}}>
+          <Col span={2}>
+              <DemoLiquid />
+            </Col>
+            <Col span={4}>
+              <p style={{textAlign:"center"}}>Pressão Hisrostática</p>
+              <PressurePlot />
+            </Col>
+            <Col span={4}>
+           <p style={{textAlign:"center"}}>Corrente</p>
 
+            <DemoTinyArea/>
+           </Col>
+         
+           <Col span={2}>
+            <TemperatureRingPlot/>
+           </Col>
+           <Col span={4}>
+           <p style={{textAlign:"center"}}>Tensão</p>
+
+            <DemoTinyArea/>
+           </Col>
+          </Row>
           <Row gutter={[16, 16]}>
             <Col span={12}>
               <AreaTensionInteration />
@@ -84,7 +109,7 @@ const Home = () => {
             </Col>
           </Row>
         </Content>
-        <Footer style={{ textAlign: 'center',backgroundColor:"#333333",color:"#ffffff"}}>CATI-BR ©2023</Footer>
+        <Footer style={{ textAlign: 'center', backgroundColor: "#333333", color: "#ffffff" }}>CATI-BR ©2023</Footer>
       </Layout>
     </Layout>
   );
