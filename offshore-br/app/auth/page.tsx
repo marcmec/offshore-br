@@ -16,13 +16,10 @@ import BarPlot from '../components/BarPlot';
 import LinePlot from '../components/LinePlot';
 import AreaTensionInteration from '../components/AreaTensionInteration';
 import AreaTensionDepth from '../components/AreaTensionDepth';
-import DemoLiquid from '../components/LiquidPlot';
 import DemoTinyArea from '../components/TinyPlotArea';
 import PressurePlot from '../components/PressurePlot';
 import TemperatureRingPlot from '../components/TemperaturePlot';
 import Link from 'next/link';
-import LiquidPlot from '../components/LiquidPlot';
-import BulletPlot from '../components/LiquidPlot';
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
