@@ -47,7 +47,7 @@ const Login = () => {
                 <div style={{ height: '100vh', width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <Card
                                 style={{ width: '336px' }}
-                                title="Card title"
+                                title="CATI BR"
                                 extra={<a href="#"><InfoCircleFilled /></a>}
                                 tabList={tabList}
                                 activeTabKey={activeTabKey1}
