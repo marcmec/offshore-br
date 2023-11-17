@@ -28,7 +28,7 @@ const TinyPlotArea = () => {
   
   };
 
-  return <Area {...config} height={50} />;
+  return <Area {...config} height={100} />;
 };
 
 export default TinyPlotArea

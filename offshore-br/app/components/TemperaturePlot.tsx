@@ -30,7 +30,7 @@ const TemperatureRingPlot = () => {
                         },
                 }
         };
-        return <RingProgress {...config} />;
+        return <RingProgress {...config} height={100}/>;
 };
 
 export default TemperatureRingPlot

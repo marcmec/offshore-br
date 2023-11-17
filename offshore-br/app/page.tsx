@@ -1,118 +1,63 @@
 'use client'
-import React, { useEffect, useState } from 'react';
-import {
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import { Breadcrumb, Col, Layout, Menu, Row, theme } from 'antd';
-import { Area } from '@ant-design/plots';
-import AreaPlot from './components/AreaTensionDepth';
-import BarPlot from './components/BarPlot';
-import LinePlot from './components/LinePlot';
-import AreaTensionInteration from './components/AreaTensionInteration';
-import AreaTensionDepth from './components/AreaTensionDepth';
-import DemoLiquid from './components/LiquidPlot';
-import DemoTinyArea from './components/TinyPlotArea';
-import PressurePlot from './components/PressurePlot';
-import TemperatureRingPlot from './components/TemperaturePlot';
-const { Header, Content, Footer, Sider } = Layout;
 
-type MenuItem = Required<MenuProps>['items'][number];
+import { InfoCircleFilled } from "@ant-design/icons";
+import { Button, Card, Form, Input, Layout, Space } from "antd"
+import { Header, Footer, Content } from "antd/es/layout/layout"
+import { useState } from "react";
+import LoginComponent from "./components/LoginComponent";
+import Link from "next/link";
 
-function getItem(
-  label: React.ReactNode,
-  key: React.Key,
-  icon?: React.ReactNode,
-  children?: MenuItem[],
-): MenuItem {
-  return {
-    key,
-    icon,
-    children,
-    label,
-  } as MenuItem;
+
+
+
+const Login = () => {
+        const tabList = [
+                {
+                        key: 'tab1',
+                        tab: 'Admin',
+                },
+                {
+                        key: 'tab2',
+                        tab: 'Usuário',
+                },
+        ];
+        const tabListNoTitle = [
+                {
+                        key: 'article',
+                        label: 'article',
+                },
+                {
+                        key: 'app',
+                        label: 'app',
+                },
+                {
+                        key: 'project',
+                        label: 'project',
+                },
+        ];
+        const [activeTabKey1, setActiveTabKey1] = useState<string>('tab1');
+        const onTab1Change = (key: string) => {
+                setActiveTabKey1(key);
+        };
+   
+      
+       
+        return (
+
+                <div style={{ height: '100vh', width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Card
+                                style={{ width: '336px' }}
+                                title="Card title"
+                                extra={<a href="#"><InfoCircleFilled /></a>}
+                                tabList={tabList}
+                                activeTabKey={activeTabKey1}
+                                onTabChange={onTab1Change}
+                        >
+                                {activeTabKey1 === 'tab1' ? <LoginComponent/>:   <Link href={'/auth'}>
+                                        <Button type="primary" htmlType="submit">Entrar</Button></Link>}
+                        </Card>
+                </div>
+        )
 }
 
-const items: MenuItem[] = [
-  getItem('Dashboard', '1', <PieChartOutlined />),
-  // getItem('Option 2', '2', <DesktopOutlined />),
-  // getItem('User', 'sub1', <UserOutlined />, [
-  //   getItem('Tom', '3'),
-  //   getItem('Bill', '4'),
-  //   getItem('Alex', '5'),
-  // ]),
-  // getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
-  // getItem('Files', '9', <FileOutlined />),
-];
-
-const Home = () => {
-  const [collapsed, setCollapsed] = useState(false);
-
-
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
-  return (
-    <Layout style={{ minHeight: '100vh', backgroundColor: '#333333' }}>
-      <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" items={items} />
-      </Sider>
-      <Layout style={{ backgroundColor: '#333333', color: "#ffffff" }}>
-        <Header style={{ padding: 0, background: "#333333" }} />
-        <Content style={{ margin: '0 16px', }}>
-          <Breadcrumb style={{ margin: '16px 0', color: "#ffffff" }}>
-            <Breadcrumb.Item>DashBoard</Breadcrumb.Item>
-            <Breadcrumb.Item>OffShore</Breadcrumb.Item>
-          </Breadcrumb>
-          <Row style={{justifyContent:"center",alignItems:"center",padding:"8px",flex:1}}>
-          <Col span={2}>
-              <DemoLiquid />
-            </Col>
-            <Col span={4}>
-              <p style={{textAlign:"center"}}>Pressão Hisrostática</p>
-              <PressurePlot />
-            </Col>
-            <Col span={4}>
-           <p style={{textAlign:"center"}}>Corrente</p>
-
-            <DemoTinyArea/>
-           </Col>
-         
-           <Col span={2}>
-            <TemperatureRingPlot/>
-           </Col>
-           <Col span={4}>
-           <p style={{textAlign:"center"}}>Tensão</p>
-
-            <DemoTinyArea/>
-           </Col>
-          </Row>
-          <Row gutter={[16, 16]}>
-            <Col span={12}>
-              <AreaTensionInteration />
-            </Col>
-            <Col span={12}>
-              <BarPlot />
-            </Col>
-            <Col span={12}>
-              <AreaTensionDepth />
-
-            </Col>
-            <Col span={12}>
-              <LinePlot />
-            </Col>
-          </Row>
-        </Content>
-        <Footer style={{ textAlign: 'center', backgroundColor: "#333333", color: "#ffffff" }}>CATI-BR ©2023</Footer>
-      </Layout>
-    </Layout>
-  );
-};
-
-export default Home;
+export default Login
