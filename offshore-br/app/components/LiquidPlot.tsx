@@ -16,7 +16,7 @@ const DemoLiquid = () => {
                         }
                 },
                
-                liquidStyle: ({ depth }) => ({
+                liquidStyle: ({ depth }:any) => ({
                         fill: depth > 0.45 ? '#5B8FF9' : '#FAAD14',
                         stroke: depth > 0.45 ? '#5B8FF9' : '#FAAD14',
                 })
