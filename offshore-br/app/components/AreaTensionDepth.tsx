@@ -14,7 +14,7 @@ const AreaTensionDepth = () => {
   };
   const config = {
     data,
-    xField: 'id',
+    xField: 'tempo',
     yField: 'exit_tension',
     seriesField: 'Tensão e Profundidade',
     xAxis: {

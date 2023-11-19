@@ -14,10 +14,10 @@ const LinePlot = () => {
       
         const config = {
                 data,
-                xField: 'depth',
-                yField: 'id',
+                xField: 'tempo',
+                yField: 'pressao_interna',
                 xAxis: {
-                        tickCount: 5,
+                        tickCount: 3,
                       },
                       theme:"dark"
 

@@ -14,8 +14,8 @@ const AreaTensionInteration = ()=>{
         };
         const config = {
           data,
-          xField: 'id',
-          yField: 'max_current',
+          xField: 'tempo',
+          yField: 'densidade_agua',
           xAxis: {
             range: [0, 1],
           },

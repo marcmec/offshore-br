@@ -20,6 +20,7 @@ import DemoTinyArea from '../components/TinyPlotArea';
 import PressurePlot from '../components/PressurePlot';
 import TemperatureRingPlot from '../components/TemperaturePlot';
 import Link from 'next/link';
+import High from '../components/highcharts/LineHigh';
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -91,7 +92,7 @@ const Home = () => {
               <DemoTinyArea />
             </Card>
 
-            <Card style={{ width: '200px',height:'200px' }} title="Temperatura"
+            <Card style={{ width: '200px',height:'200px' }} title="Temperature (°C)"
             >
               <h1>15°C</h1>
             </Card>
@@ -102,19 +103,28 @@ const Home = () => {
             </Card>
           </Row>
           {/* </Card> */}
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16,16]}>
+      
             <Col span={12}>
-              <AreaTensionInteration />
-            </Col>
-            <Col span={12}>
-              <BarPlot />
-            </Col>
-            <Col span={12}>
-              <AreaTensionDepth />
+              <High y='pressao_interna' title='Pressão Interna ao Longo do Tempo'  nameVariation='Pressão Interna'/>
 
+            </Col> 
+            <Col span={12}>
+              <High y='diametro_externo' title='Diâmetro Externo Ao longo do Tempo' nameVariation='Diâmetro Externo' />
             </Col>
             <Col span={12}>
-              <LinePlot />
+              <High y='espessura_parede' title='Espessura da Parede ao Longo do Tempo' nameVariation='Espessura da Parede'/>
+
+            </Col> 
+            <Col span={12}>
+              <High y='profundidade_agua' title='Profundidade da Água Ao longo do Tempo'nameVariation='Profundidade da Água' />
+            </Col>
+            <Col span={12}>
+              <High y='comprimento_riser' title='Comprimento Riser ao Longo do Tempo' nameVariation='Comprimento Riser' />
+
+            </Col> 
+            <Col span={12}>
+              <High y='temperatura' title='Temperatura Ao longo do Tempo' nameVariation='Temperature (°C)'/>
             </Col>
           </Row>
         </Content>
