@@ -1,15 +1,22 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import {
+  BellFilled,
+  DashboardOutlined,
   DesktopOutlined,
   FileOutlined,
+  GroupOutlined,
   LogoutOutlined,
   PieChartOutlined,
+  PlusOutlined,
+  SaveFilled,
+  SecurityScanOutlined,
+  SettingOutlined,
   TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Breadcrumb, Card, Col, Layout, Menu, Row, theme } from 'antd';
+import { Badge, Breadcrumb, Button, Card, Col, Layout, Menu, Row, Space, theme } from 'antd';
 import { Area } from '@ant-design/plots';
 import AreaPlot from '../components/AreaTensionDepth';
 import BarPlot from '../components/BarPlot';
@@ -21,6 +28,10 @@ import PressurePlot from '../components/PressurePlot';
 import TemperatureRingPlot from '../components/TemperaturePlot';
 import Link from 'next/link';
 import High from '../components/highcharts/LineHigh';
+import Title from 'antd/es/typography/Title';
+import { count } from '../utils/count';
+import CardItems from '../components/CardItems';
+import HeaderPerfil from '../components/Header';
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -39,21 +50,24 @@ function getItem(
   } as MenuItem;
 }
 
-const items: MenuItem[] = [
-  getItem('Dashboard', '1', <PieChartOutlined />),
-  getItem('Logout', '2', <Link href="/">
-    <LogoutOutlined />
-  </Link>),
 
-  // getItem('User', 'sub1', <UserOutlined />, [
-  //   getItem('Tom', '3'),
-  //   getItem('Bill', '4'),
-  //   getItem('Alex', '5'),
-  // ]),
-  // getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
-  // getItem('Files', '9', <FileOutlined />),
+const items: MenuItem[] = [
+  getItem('Dashboard', '0', <DashboardOutlined />),
+getItem("Adicionar Item",'1', <PlusOutlined/>),
+  getItem('Risers', '3', <GroupOutlined />, [getItem('Riser 1', '6'), getItem('RIser 2', '8')]),  getItem('Configurações', '4', <SettingOutlined />),
+
+  getItem('Notificações','5',<Badge size="small" count={4}  offset={[10,15]}>
+  <BellFilled style={{ color: "white" }} />
+</Badge>
+),
+  getItem('Logout', '2', <Link href="/">
+  <LogoutOutlined />
+</Link>),
 ];
 
+const optionsDashboardMenu:MenuItem[] = [
+  getItem(null,'1',<SaveFilled/>)
+]
 const Home = () => {
   const [collapsed, setCollapsed] = useState(false);
 
@@ -68,63 +82,54 @@ const Home = () => {
         <div className="demo-logo-vertical" />
         <Menu theme="dark" mode="inline" items={items} />
       </Sider>
-      <Layout style={{ backgroundColor: '#333333', color: "#ffffff" }}>
-        <Header style={{ padding: 0, background: "#333333" }} />
+      <Layout style={{ backgroundColor: '#333333', color: "#ffffff", width:"100vw" }}>
+        <Header style={{justifyContent:"end",justifyItems:"end",alignItems:"center",display:"flex"}}>
+          <HeaderPerfil/>
+        </Header>
         <Content style={{ margin: '0 16px', }}>
           <Breadcrumb style={{ margin: '16px 0', color: "#ffffff" }}>
             <Breadcrumb.Item>DashBoard</Breadcrumb.Item>
             <Breadcrumb.Item>OffShore</Breadcrumb.Item>
           </Breadcrumb>
-          {/* <Card style={{ margin: "8px", backgroundColor: "black", border: "0" }}> */}
-          <Row style={{ justifyContent: "center", alignItems: "center", gap: 4,padding:"8px" }}>
-          <Card style={{ width: '200px',height:'200px' }} title="Profundidade"
-            >
-              <h1>1500m</h1>
-              
-            </Card>
-            <Card style={{ width: '200px', }} title="Pressão">
 
-              <PressurePlot />
-            </Card>
-            <Card style={{ width: '200px',}} title="Corrente"
+          <Row className="rowgap-vbox" gutter={[24, 0] } style={{margin:"8px"}}>
+          {count.map((c, index) => (
+            <Col
+              key={index}
+              xs={24}
+              sm={24}
+              md={12}
+              lg={6}
+              xl={6}
+              className="mb-24"
             >
+            <CardItems {...c}/>
+            </Col>
+          ))}
+        </Row>
+    
+          <Row gutter={[16, 16]}>
 
-              <DemoTinyArea />
-            </Card>
-
-            <Card style={{ width: '200px',height:'200px' }} title="Temperature (°C)"
-            >
-              <h1>15°C</h1>
-            </Card>
-            <Card style={{ width: '200px' }} title="Tensão de Saída"
-            >
-
-              <DemoTinyArea />
-            </Card>
-          </Row>
-          {/* </Card> */}
-          <Row gutter={[16,16]}>
-      
             <Col span={12}>
-              <High y='pressao_interna' title='Pressão Interna ao Longo do Tempo'  nameVariation='Pressão Interna'/>
+              <High y='pressao_interna' title='Pressão Interna ao Longo do Tempo' nameVariation='Pressão Interna' color='orange' />
 
-            </Col> 
-            <Col span={12}>
-              <High y='diametro_externo' title='Diâmetro Externo Ao longo do Tempo' nameVariation='Diâmetro Externo' />
             </Col>
             <Col span={12}>
-              <High y='espessura_parede' title='Espessura da Parede ao Longo do Tempo' nameVariation='Espessura da Parede'/>
-
-            </Col> 
-            <Col span={12}>
-              <High y='profundidade_agua' title='Profundidade da Água Ao longo do Tempo'nameVariation='Profundidade da Água' />
+              <High y='diametro_externo' title='Diâmetro Externo Ao longo do Tempo' nameVariation='Diâmetro Externo' color='red' />
             </Col>
             <Col span={12}>
-              <High y='comprimento_riser' title='Comprimento Riser ao Longo do Tempo' nameVariation='Comprimento Riser' />
+              <High y='espessura_parede' title='Espessura da Parede ao Longo do Tempo' nameVariation='Espessura da Parede' color='yellow' />
 
-            </Col> 
+            </Col>
             <Col span={12}>
-              <High y='temperatura' title='Temperatura Ao longo do Tempo' nameVariation='Temperature (°C)'/>
+              <High y='profundidade_agua' title='Profundidade da Água Ao longo do Tempo' nameVariation='Profundidade da Água' color='blue' />
+            </Col>
+            <Col span={12}>
+              <High y='comprimento_riser' title='Comprimento Riser ao Longo do Tempo' nameVariation='Comprimento Riser' color='green' />
+
+            </Col>
+            <Col span={12}>
+              <High y='temperatura' title='Temperatura Ao longo do Tempo' nameVariation='Temperature (°C)' color='white' />
             </Col>
           </Row>
         </Content>
