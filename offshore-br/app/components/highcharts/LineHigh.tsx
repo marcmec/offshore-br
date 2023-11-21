@@ -19,7 +19,6 @@ if (typeof Highcharts === 'object') {
 
 const High = ({ y, title, nameVariation, color }: IProps) => {
         const [data, setData] = useState<any>([])
-        const [dataFiltered,setDataFiltered]= useState<any>([])
         const asyncFetch = async () => {
                 try {
                   const response = await fetch('saidas.json');
@@ -38,8 +37,13 @@ const High = ({ y, title, nameVariation, color }: IProps) => {
                 asyncFetch()
                 
         }, []);
-        const datas = timestamps.map((timestamp, index) => [timestamp, data[y][index]]);
-        const options = {
+        const datas = timestamps.map((timestamp, index) => {
+                if (data[y] && data[y][index] !== undefined) {
+                  return [timestamp, data[y][index]];
+                } else {
+                  return [timestamp, null]; // Ou qualquer valor padrão desejado
+                }
+              });        const options = {
 
 
                 title: {
