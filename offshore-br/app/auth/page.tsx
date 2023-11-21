@@ -1,37 +1,22 @@
 'use client'
-import React, { useEffect, useState } from 'react';
 import {
   BellFilled,
   DashboardOutlined,
-  DesktopOutlined,
-  FileOutlined,
   GroupOutlined,
   LogoutOutlined,
-  PieChartOutlined,
   PlusOutlined,
   SaveFilled,
-  SecurityScanOutlined,
-  SettingOutlined,
-  TeamOutlined,
-  UserOutlined,
+  SettingOutlined
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Badge, Breadcrumb, Button, Card, Col, Layout, Menu, Row, Space, theme } from 'antd';
-import { Area } from '@ant-design/plots';
-import AreaPlot from '../components/AreaTensionDepth';
-import BarPlot from '../components/BarPlot';
-import LinePlot from '../components/LinePlot';
-import AreaTensionInteration from '../components/AreaTensionInteration';
-import AreaTensionDepth from '../components/AreaTensionDepth';
-import DemoTinyArea from '../components/TinyPlotArea';
-import PressurePlot from '../components/PressurePlot';
-import TemperatureRingPlot from '../components/TemperaturePlot';
+import { Badge, Breadcrumb, Col, Layout, Menu, Row, theme } from 'antd';
+import React, { useState } from 'react';
+
 import Link from 'next/link';
-import High from '../components/highcharts/LineHigh';
-import Title from 'antd/es/typography/Title';
-import { count } from '../utils/count';
 import CardItems from '../components/CardItems';
 import HeaderPerfil from '../components/Header';
+import High from '../components/highcharts/LineHigh';
+import { count } from '../utils/count';
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -115,7 +100,7 @@ const Home = () => {
 
             </Col>
             <Col span={12}>
-              <High y='diametro_externo' title='Diâmetro Externo Ao longo do Tempo' nameVariation='Diâmetro Externo' color='red' />
+              <High y='diametro_externo' title='Diâmetro Externo Ao longo do Tempo' nameVariation='Diâmetro Externo' color='purple' />
             </Col>
             <Col span={12}>
               <High y='espessura_parede' title='Espessura da Parede ao Longo do Tempo' nameVariation='Espessura da Parede' color='yellow' />
